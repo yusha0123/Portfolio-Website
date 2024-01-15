@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section id="home" className="flex flex-col gap-4 lgl:gap-8">
+    <section
+      id="home"
+      className="flex flex-col min-h-screen lgl:h-auto gap-4 lgl:gap-8 mx-auto w-full py-10 mdl:py-24"
+    >
       <motion.h3
         initial={{
           y: 10,

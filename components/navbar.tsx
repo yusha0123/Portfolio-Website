@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full  sticky top-0 z-10 bg-bodyColor px-5 lg:px-8 ${
+      className={`w-full  sticky top-0 z-10 backdrop-blur-md px-5 lg:px-8 ${
         scrolled && "shadow-navbarBoxShadow"
       }`}
     >
