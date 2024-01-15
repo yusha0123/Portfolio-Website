@@ -4,6 +4,17 @@ import Image from "next/image";
 import { AiFillThunderbolt } from "react-icons/ai";
 
 const About = () => {
+  const technologies: string[] = [
+    "JavaScript (ES6+)",
+    "Next.js",
+    "React",
+    "Typescript",
+    "MySQL",
+    "MongoDB",
+    "TailwindCss",
+    "Express JS",
+  ];
+
   return (
     <section id="about" className="py-10 lgl:py-28 flex flex-col gap-8">
       <SectionTitle title="About Me" titleNo={"01"} />
@@ -30,54 +41,14 @@ const About = () => {
             Here are a few technologies I&rsquo;ve been working with recently:
           </p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              JavaScript (ES6+)
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Next.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              React
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              MySQL
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              TypeScript
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Express.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              MongoDB
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Tailwindcss
-            </li>
+            {technologies.map((technology) => (
+              <li className="flex items-center gap-2">
+                <span className="text-textGreen">
+                  <AiFillThunderbolt />
+                </span>
+                {technology}
+              </li>
+            ))}
           </ul>
         </div>
         <div className="w-full lgl:w-1/3 h-80 relative group mx-auto">
