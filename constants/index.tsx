@@ -8,7 +8,7 @@ const recentTechnologies: string[] = [
   "Typescript",
   "MySQL",
   "MongoDB",
-  "TailwindCss",
+  "Tailwindcss",
   "Express JS",
 ];
 

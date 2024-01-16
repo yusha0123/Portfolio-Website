@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className="w-full min-h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden overflow-y-auto">
         <Navbar />
         <LeftSide />
-        <main className="max-w-contentContainer mdl:px-10 xl:px-36 px-4">
+        <main className="max-w-6xl mx-auto mdl:px-10 xl:px-20 px-4">
           {children}
         </main>
         <RightSide />

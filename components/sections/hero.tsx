@@ -2,10 +2,7 @@ import AnimatedElement from "@/components/animated-element";
 
 const Hero = () => {
   return (
-    <section
-      id="home"
-      className="flex flex-col min-h-screen lgl:h-auto gap-4 lgl:gap-8 mx-auto w-full py-10 mdl:py-24"
-    >
+    <section className="flex flex-col min-h-screen lgl:h-auto gap-4 lgl:gap-8 mx-auto w-full py-10 mdl:py-16">
       <AnimatedElement
         elementType="h3"
         animationProps={{
@@ -56,11 +53,12 @@ const Hero = () => {
             delay: 0.8,
           },
         }}
-        className="text-base md:max-w-[650px] text-textDark font-medium"
+        className="text-base md:max-w-[500px] text-textDark font-medium"
       >
-        I am Full Stack Developer with a passion for coding & problem solving
-        and am skilled in creating user-friendly and responsive web applications
-        using React and its ecosystem.
+        As a Full Stack Developer, I'm passionate about coding and
+        problem-solving. Proficient in React and frontend technologies, I excel
+        in backend development, crafting robust server-side solutions that
+        enhance the seamless functionality of web applications.
       </AnimatedElement>
       <a href="https://github.com/yusha0123" target="_blank">
         <AnimatedElement

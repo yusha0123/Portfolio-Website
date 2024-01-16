@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full  sticky top-0 z-10 backdrop-blur-md px-5 lg:px-8 ${
+      className={`w-full  sticky top-0 z-20 bg-bodyColor px-5 lg:px-8 ${
         scrolled && "shadow-navbarBoxShadow"
       }`}
     >
@@ -32,26 +32,6 @@ const Navbar = () => {
         </motion.div>
         <div className="hidden mdl:inline-flex items-center gap-7">
           <ul className="flex text-sm gap-7">
-            <Link
-              href={"#home"}
-              className="font-medium text-textDark duration-300 nav-link hover:text-textGreen"
-            >
-              <motion.li
-                initial={{
-                  y: -10,
-                  opacity: 0,
-                }}
-                animate={{
-                  y: 0,
-                  opacity: 1,
-                }}
-                transition={{
-                  duration: 0.1,
-                }}
-              >
-                Home
-              </motion.li>
-            </Link>
             <Link
               href={"#about"}
               className="font-medium text-textDark duration-300 nav-link hover:text-textGreen"
@@ -76,7 +56,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href={"#about"}
+              href={"#projects"}
               className="font-medium text-textDark duration-300 nav-link hover:text-textGreen"
             >
               <motion.li

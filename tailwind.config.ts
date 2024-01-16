@@ -7,12 +7,6 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    maxWidth: {
-      container: "1440px",
-      contentContainer: "1140px",
-      containerSmall: "1024px",
-      containerXs: "768px",
-    },
     extend: {
       screens: {
         xs: "320px",
