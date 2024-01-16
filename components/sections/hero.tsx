@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import AnimatedElement from "@/components/animated-element";
 
 const Hero = () => {

@@ -1,12 +1,14 @@
-"use client";
-import { motion } from "framer-motion";
+import AnimatedElement from "./animated-element";
 
 const RightSide = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1.5 }}
+    <AnimatedElement
+      animationProps={{
+        initial: { opacity: 0 },
+        animate: { opacity: 1 },
+        transition: { delay: 1.5 },
+      }}
+      elementType="div"
       className="h-full flex-col items-center justify-end w-32 gap-6 text-textLight hidden xl:inline-flex fixed right-0 bottom-0"
     >
       <a href="mailto:ymmttmy5@gmail.com">
@@ -15,7 +17,7 @@ const RightSide = () => {
         </p>
       </a>
       <div className="w-[2px] h-28 bg-textDark"></div>
-    </motion.div>
+    </AnimatedElement>
   );
 };
 

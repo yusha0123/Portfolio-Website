@@ -2,19 +2,9 @@ import React from "react";
 import SectionTitle from "@/components/section-title";
 import Image from "next/image";
 import { AiFillThunderbolt } from "react-icons/ai";
+import { recentTechnologies } from "@/constants";
 
 const About = () => {
-  const technologies: string[] = [
-    "JavaScript (ES6+)",
-    "Next.js",
-    "React",
-    "Typescript",
-    "MySQL",
-    "MongoDB",
-    "TailwindCss",
-    "Express JS",
-  ];
-
   return (
     <section id="about" className="py-10 lgl:py-28 flex flex-col gap-8">
       <SectionTitle title="About Me" titleNo={"01"} />
@@ -41,7 +31,7 @@ const About = () => {
             Here are a few technologies I&rsquo;ve been working with recently:
           </p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
-            {technologies.map((technology) => (
+            {recentTechnologies.map((technology) => (
               <li className="flex items-center gap-2">
                 <span className="text-textGreen">
                   <AiFillThunderbolt />
