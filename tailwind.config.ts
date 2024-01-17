@@ -27,6 +27,7 @@ const config: Config = {
       },
       colors: {
         bodyColor: "#0A192F",
+        secondaryColor: "#112240",
         textGreen: "#64ffda",
         textLight: "#ccd6f6",
         textDark: "#8892b0",
