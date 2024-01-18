@@ -3,15 +3,17 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useIsScrolled } from "@/hooks/use-is-Scrolled";
+import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const scrolled = useIsScrolled();
 
   return (
     <nav
-      className={`w-full  sticky top-0 z-20 bg-bodyColor px-5 lg:px-8 ${
+      className={cn(
+        "w-full  sticky top-0 z-20 bg-bodyColor px-5 lg:px-8",
         scrolled && "shadow-navbarBoxShadow"
-      }`}
+      )}
     >
       <div className="max-w-container h-full mx-auto py-5 font-titleFont flex items-center justify-between">
         <motion.div

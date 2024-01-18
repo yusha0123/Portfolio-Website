@@ -8,8 +8,8 @@ const Projects = () => {
       <SectionTitle title="Some Things I have Built" titleNo="02" />
 
       <div className="flex flex-col gap-8 md:gap-12 xl:gap-16 mt-6 md:mt-12">
-        {featuredProjects.map((project) => (
-          <FeaturedCard project={project} />
+        {featuredProjects.map((project, i) => (
+          <FeaturedCard project={project} key={i} showReversed={i % 2 !== 0} />
         ))}
       </div>
     </section>

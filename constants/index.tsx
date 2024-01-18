@@ -1,3 +1,4 @@
+import { FeaturedProject } from "@/lib/types";
 import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
@@ -31,7 +32,15 @@ const socialLinks = [
   },
 ];
 
-const featuredProjects = [
+const featuredProjects: FeaturedProject = [
+  {
+    title: "Notion Clone",
+    description:
+      "Notion Clone is a comprehensive project developed on the Next.js 14 framework, emulating the functionality of Notion. Clerk Authentication ensures secure user access. Tailwind CSS and Shadcn/UI contribute to a responsive and visually appealing UI. Real-time updates are facilitated through Convex Real-time Database, ensuring dynamic content changes.",
+    image: "/notion.webp",
+    github: "https://github.com/yusha0123/Notion-Clone",
+    live: "https://notes-yusha.vercel.app",
+  },
   {
     title: "Expense Tracker",
     description:
