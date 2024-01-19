@@ -34,6 +34,13 @@ const socialLinks = [
 
 const featuredProjects: FeaturedProject = [
   {
+    title: "Discord Clone",
+    description:
+      "Discord Clone, developed on Next.js 13 framework, closely mimics Discord's core features. Users can create channels, invite others, and exchange messages in channels and 1:1 conversations. Powered by Socket.io, it supports real-time audio/video calls. Private conversations with all channel members are facilitated through Livekit WebRTC.",
+    image: "/discord.webp",
+    github: "https://github.com/yusha0123/Discord-Clone",
+  },
+  {
     title: "Notion Clone",
     description:
       "Notion Clone is a comprehensive project developed on the Next.js 14 framework, emulating the functionality of Notion. Clerk Authentication ensures secure user access. Tailwind CSS and Shadcn/UI contribute to a responsive and visually appealing UI. Real-time updates are facilitated through Convex Real-time Database, ensuring dynamic content changes.",

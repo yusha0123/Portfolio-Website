@@ -1,8 +1,11 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 type Props = {
   project: {
@@ -17,7 +20,15 @@ type Props = {
 
 const FeaturedCard = ({ project, showReversed }: Props) => {
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      variants={{
+        visible: { opacity: 1, y: -50 },
+        hidden: { opacity: 0, y: 0 },
+      }}
       className={cn(
         "flex flex-col bg-secondaryColor md:items-center p-4 rounded-lg md:p-5 md:flex-row md:gap-12",
         showReversed && "md:flex-row-reverse"
@@ -57,7 +68,7 @@ const FeaturedCard = ({ project, showReversed }: Props) => {
           {project.description}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
