@@ -1,6 +1,5 @@
-import { FeaturedProject } from "@/lib/types";
-import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
+import { ArchiveProjects, FeaturedProjects } from "@/lib/types";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const recentTechnologies: string[] = [
   "JavaScript (ES6+)",
@@ -32,7 +31,7 @@ const socialLinks = [
   },
 ];
 
-const featuredProjects: FeaturedProject = [
+const featuredProjects: FeaturedProjects = [
   {
     title: "Discord Clone",
     description:
@@ -56,6 +55,33 @@ const featuredProjects: FeaturedProject = [
     github: "https://github.com/yusha0123/Expense-Tracker",
     live: "https://expensify-yusha.netlify.app",
   },
+  {
+    title: "Social Media Website",
+    description:
+      "TextBook is a social media website built using the MERN stack, featuring authentication using NextAuth, a PostgreSQL database managed by Prisma, and the PrimeReact library for UI. It enables users to share their thoughts with others, like, and comment on other users' posts.",
+    image: "/textbook.webp",
+    github: "https://github.com/yusha0123/TextBook",
+    live: "https://textbook-yusha.vercel.app/",
+  },
 ];
 
-export { recentTechnologies, socialLinks, featuredProjects };
+const archievedProjects: ArchiveProjects = [
+  {
+    title: "Url Shortener",
+    description:
+      "MERN Stack URL Shortener with CRUD functionality, click tracking, and update/delete options.",
+    github: "https://github.com/yusha0123/Url-Shortener",
+    live: "https://tiny-link.fly.dev",
+    stack: ["MongoDb", "Express.Js", "React.Js", "Node.Js"],
+  },
+  {
+    title: "Mail Dash",
+    description:
+      "A mailbox client application that allows users to send and receive emails in real-time without continuous Polling.",
+    github: "https://github.com/yusha0123/Mail-Dash",
+    live: "https://mail-dash-yusha.netlify.app",
+    stack: ["React.js", "TypeScript", "Firebase", "Zustand"],
+  },
+];
+
+export { featuredProjects, recentTechnologies, socialLinks, archievedProjects };

@@ -1,6 +1,7 @@
 import SectionTitle from "@/components/section-title";
 import { featuredProjects } from "@/constants";
 import FeaturedCard from "@/components/cards/featured-card";
+import Archieve from "@/components/archieve";
 
 const Projects = () => {
   return (
@@ -12,6 +13,7 @@ const Projects = () => {
           <FeaturedCard project={project} key={i} showReversed={i % 2 !== 0} />
         ))}
       </div>
+      <Archieve />
     </section>
   );
 };
