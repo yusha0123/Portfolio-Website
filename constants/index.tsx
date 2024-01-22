@@ -77,10 +77,89 @@ const archievedProjects: ArchiveProjects = [
   {
     title: "Mail Dash",
     description:
-      "A mailbox client application that allows users to send and receive emails in real-time without continuous Polling.",
+      "A mailbox client application that allows users to send and receive emails in real-time.",
     github: "https://github.com/yusha0123/Mail-Dash",
     live: "https://mail-dash-yusha.netlify.app",
     stack: ["React.js", "TypeScript", "Firebase", "Zustand"],
+  },
+  {
+    title: "Chat App",
+    description:
+      "A real time chat application built using Cloud firestore database allowing users to chat in a group.",
+    github: "https://github.com/yusha0123/firebase-chat-app",
+    live: "https://chat-yusha.netlify.app",
+    stack: ["React.js", "Chakra UI", "Firebase"],
+  },
+  {
+    title: "Alpha Stock",
+    description:
+      "An application where users can search for US stocks, add it to Portfolio and keep a track of its Price!",
+    live: "https://alpha-stock-yusha.netlify.app/",
+    github: "https://github.com/yusha0123/Alpha-Stock",
+    stack: ["React.Js", "Firebase", "Material UI", "Charts.Js 2"],
+  },
+  {
+    title: "Quiz App",
+    description:
+      "A quiz application built using Next.js where users can play quizzes with different question categories.",
+    live: "https://quizy-yusha.vercel.app/",
+    github: "https://github.com/yusha0123/Quiz-App",
+    stack: ["Next.Js", "Prime React", "Tailwindcss", "The Trivia API"],
+  },
+  {
+    title: "Text Utilities",
+    description:
+      "A text manipulation application with Google Translation API, enabling users to translate to any language.",
+    live: "https://text-util-yusha.netlify.app",
+    github: "https://github.com/yusha0123/text-utilities",
+    stack: ["React.Js", "Material UI", "Google Translate API"],
+  },
+  {
+    title: "Tic tac toe",
+    description: "Tic tac toe game built using React.JS",
+    live: "https://tic-tac-toe-yusha.netlify.app/",
+    github: "https://github.com/yusha0123/tic-tac-toe",
+    stack: ["React.JS"],
+  },
+  {
+    title: "Weather App",
+    description:
+      "A Weather app built using React.JS which uses Open weather Map API for fetching weather data.",
+    github: "https://github.com/yusha0123/weather-app",
+    live: "https://weather-yusha.netlify.app",
+    stack: ["React.JS", "Material UI", "Open Weather Map API"],
+  },
+  {
+    title: "CATOG",
+    description:
+      "CATOG was my first project where I integrated an API. The APIs used were the Cat API and Dog API.",
+    github: "https://github.com/yusha0123/CATOG",
+    live: "https://catog-by-yusha.netlify.app",
+    stack: ["React.JS", "Material UI"],
+  },
+  {
+    title: "Tesla Clone",
+    description:
+      "A clone of the tesla website's landing page which looks exactly similar as of 15th December 2022.",
+    live: "https://tesla-yusha.netlify.app",
+    github: "https://github.com/yusha0123/Tesla-Landing-Page-Clone",
+    stack: ["Html", "Bootstrap", "Javascript"],
+  },
+  {
+    title: "iNotes",
+    description:
+      "iNotes is an application where users can write notes, and it can perform CRUD operations in local storage.",
+    github: "https://github.com/yusha0123/notes-web-app",
+    live: "https://inotes-yusha.netlify.app",
+    stack: ["Html", "Bootstrap", "Javascript"],
+  },
+  {
+    title: "Battery Percentage Checker",
+    description:
+      "My First Web Development project which shows the percentage of battery of any device.",
+    github: "https://github.com/yusha0123/Battery-Percentage-Checker",
+    live: "https://battery-check-yusha.netlify.app",
+    stack: ["Html", "Bootstrap", "Javascript"],
   },
 ];
 

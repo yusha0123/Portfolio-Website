@@ -1,6 +1,7 @@
 import { FaRegFolder } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { RxOpenInNewWindow } from "react-icons/rx";
+import AnimatedElement from "@/components/animated-element";
 
 type Props = {
   live?: string;
@@ -8,13 +9,32 @@ type Props = {
   title: string;
   description: string;
   stack: string[];
+  index: number;
 };
 
-const ArchiveCard = ({ live, github, title, description, stack }: Props) => {
+const ArchiveCard = ({
+  live,
+  github,
+  title,
+  description,
+  stack,
+  index,
+}: Props) => {
   return (
-    <div className="w-full rounded-lg bg-[#112240] p-7 flex flex-col gap-6 hover:-translate-y-2 transition-transform duration-300 group">
+    <AnimatedElement
+      elementType="div"
+      animationProps={{
+        initial: { opacity: 0 },
+        transition: { delay: 0.1 * index },
+      }}
+      motionProps={{
+        whileInView: { opacity: 1 },
+        viewport: { once: true },
+      }}
+      className="w-full rounded-lg bg-[#112240] p-7 flex flex-col justify-between gap-6 hover:-translate-y-2 transition-transform duration-300 group"
+    >
       <div className="flex items-center justify-between">
-        <FaRegFolder className="text-3xl md:text-5xl text-textGreen" />
+        <FaRegFolder className="text-3xl md:text-4xl text-textGreen" />
         <div className="flex gap-x-3">
           <a href={github}>
             <FiGithub className="text-2xl hover:text-textGreen" />
@@ -32,12 +52,12 @@ const ArchiveCard = ({ live, github, title, description, stack }: Props) => {
         </h2>
         <p className="text-sm mt-3">{description}</p>
       </div>
-      <ul className="text-xs mdl:text-sm text-textDark flex items-center gap-2 justify-between flex-wrap">
+      <ul className="text-xs text-textDark flex items-center gap-3 flex-wrap">
         {stack.map((item, i) => (
           <li key={i}>{item}</li>
         ))}
       </ul>
-    </div>
+    </AnimatedElement>
   );
 };
 

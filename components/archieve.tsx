@@ -9,8 +9,9 @@ const Archieve = () => {
         Other Noteworthy Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10">
-        {archievedProjects.map((project) => (
+        {archievedProjects.map((project, i) => (
           <ArchiveCard
+            index={i}
             title={project.title}
             description={project.description}
             key={project.title}

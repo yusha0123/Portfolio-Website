@@ -81,7 +81,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href={"#about"}
+              href={"#contact"}
               className="font-medium text-textDark duration-300 nav-link hover:text-textGreen"
             >
               <motion.li
