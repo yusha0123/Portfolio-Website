@@ -161,6 +161,7 @@ const Navbar = () => {
                   animate={{
                     width: "75vw",
                   }}
+                  onClick={(e: React.MouseEvent) => e.stopPropagation()}
                   exit={{
                     width: 0,
                     transition: { delay: 0.7, duration: 0.3 },

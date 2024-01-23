@@ -1,14 +1,13 @@
-import React from "react";
 import SectionTitle from "@/components/section-title";
+import { recentTechnologies } from "@/constants";
 import Image from "next/image";
 import { AiFillThunderbolt } from "react-icons/ai";
-import { recentTechnologies } from "@/constants";
 
 const About = () => {
   return (
     <section id="about" className="py-10 lgl:py-28">
       <SectionTitle title="About Me" titleNo={"01"} />
-      <div className="flex flex-col-reverse md:flex-row mt-10 gap-8 lg:gap-10">
+      <div className="flex flex-col-reverse md:flex-row mt-6 md:mt-10 gap-8 lg:gap-10">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
             Hello! My name is Yusha Tahlil, and during my second year of

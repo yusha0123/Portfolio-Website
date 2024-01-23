@@ -2,7 +2,7 @@ import AnimatedElement from "@/components/animated-element";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col min-h-screen lgl:h-auto gap-4 lgl:gap-8 mx-auto w-full py-10 mdl:py-16">
+    <section className="flex flex-col gap-4 lgl:gap-8 mx-auto w-full mdl:py-16 h-[calc(100dvh-70px)] justify-center">
       <AnimatedElement
         elementType="h3"
         animationProps={{
