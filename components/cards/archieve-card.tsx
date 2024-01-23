@@ -1,4 +1,4 @@
-import { FaRegFolder } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import AnimatedElement from "@/components/animated-element";
@@ -34,7 +34,7 @@ const ArchiveCard = ({
       className="w-full rounded-lg bg-[#112240] p-7 flex flex-col justify-between gap-6 hover:-translate-y-2 transition-transform duration-300 group"
     >
       <div className="flex items-center justify-between">
-        <FaRegFolder className="text-3xl md:text-4xl text-textGreen" />
+        <FaCode className="text-3xl md:text-4xl text-textGreen" />
         <div className="flex gap-x-3">
           <a href={github}>
             <FiGithub className="text-2xl hover:text-textGreen" />
