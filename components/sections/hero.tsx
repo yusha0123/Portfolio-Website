@@ -55,7 +55,7 @@ const Hero = () => {
         }}
         className="text-base md:max-w-[500px] text-textDark font-medium"
       >
-        As a Full Stack Developer, I'm passionate about coding and
+        As a Full Stack Developer, I&rsquo;m passionate about coding and
         problem-solving. Proficient in React and frontend technologies, I excel
         in backend development, crafting robust server-side solutions that
         enhance the seamless functionality of web applications.

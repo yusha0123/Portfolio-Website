@@ -20,7 +20,7 @@ const About = () => {
             crafting digital wonders that come to life on the internet.
           </p>
           <p>
-            So, whether it's unleashing the power of{" "}
+            So, whether it&apos;s unleashing the power of{" "}
             <span className="text-textGreen">
               JavaScript thunderbolts or sculpting pixels into breathtaking
               interfaces,
@@ -32,8 +32,8 @@ const About = () => {
             Here are a few technologies I&rsquo;ve been working with recently:
           </p>
           <ul className="max-w-md text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
-            {recentTechnologies.map((technology) => (
-              <li className="flex items-center gap-2">
+            {recentTechnologies.map((technology, index) => (
+              <li key={index} className="flex items-center gap-2">
                 <span className="text-textGreen">
                   <AiFillThunderbolt />
                 </span>
