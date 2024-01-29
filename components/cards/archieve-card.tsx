@@ -36,11 +36,11 @@ const ArchiveCard = ({
       <div className="flex items-center justify-between">
         <FaCode className="text-3xl md:text-4xl text-textGreen" />
         <div className="flex gap-x-3">
-          <a href={github}>
+          <a href={github} target="_blank">
             <FiGithub className="text-2xl hover:text-textGreen" />
           </a>
           {live && (
-            <a href={live}>
+            <a href={live} target="_blank">
               <RxOpenInNewWindow className="text-2xl hover:text-textGreen" />
             </a>
           )}

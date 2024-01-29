@@ -162,10 +162,6 @@ const Navbar = () => {
                     width: "75vw",
                   }}
                   onClick={(e: React.MouseEvent) => e.stopPropagation()}
-                  exit={{
-                    width: 0,
-                    transition: { delay: 0.7, duration: 0.3 },
-                  }}
                   className="bg-secondaryColor h-full z-[99] relative px-4 py-16 overflow-y-auto"
                 >
                   <MdOutlineClose
@@ -188,7 +184,7 @@ const Navbar = () => {
                             ease: "easeIn",
                           }}
                         >
-                          <span className="text-textGreen">01.</span>
+                          <span className="text-textGreen">01. </span>
                           About
                         </motion.li>
                       </Link>
@@ -206,7 +202,7 @@ const Navbar = () => {
                             ease: "easeIn",
                           }}
                         >
-                          <span className="text-textGreen">02.</span>
+                          <span className="text-textGreen">02. </span>
                           Projects
                         </motion.li>
                       </Link>
@@ -224,7 +220,7 @@ const Navbar = () => {
                             ease: "easeIn",
                           }}
                         >
-                          <span className="text-textGreen">03.</span>
+                          <span className="text-textGreen">03. </span>
                           Contact
                         </motion.li>
                       </Link>
@@ -260,7 +256,7 @@ const Navbar = () => {
                       animate={{ opacity: 1 }}
                       transition={{ delay: 1.2, ease: "easeIn" }}
                       className="text-sm w-full tracking-widest text-textGreen text-center"
-                      href="ymmttmy5@gmail.com"
+                      href="mailto:ymmttmy5@gmail.com"
                     >
                       <p>ymmttmy5@gmail.com</p>
                     </motion.a>
