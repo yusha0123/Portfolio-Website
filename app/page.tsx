@@ -1,3 +1,4 @@
+import ProjectModal from "@/components/project-modal";
 import About from "@/components/sections/about";
 import Contact from "@/components/sections/contact";
 import Hero from "@/components/sections/hero";
@@ -10,6 +11,7 @@ const HomePage = () => {
       <About />
       <Projects />
       <Contact />
+      <ProjectModal />
     </>
   );
 };

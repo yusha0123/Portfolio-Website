@@ -6,6 +6,7 @@ import Link from "next/link";
 import React from "react";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { motion } from "framer-motion";
+import useModalStore from "@/hooks/use-modal-store";
 
 type Props = {
   project: {
@@ -19,6 +20,8 @@ type Props = {
 };
 
 const FeaturedCard = ({ project, showReversed }: Props) => {
+  const { onOpen } = useModalStore();
+
   return (
     <motion.div
       initial="hidden"
@@ -49,11 +52,11 @@ const FeaturedCard = ({ project, showReversed }: Props) => {
         </Link>
       </div>
       <div className="md:w-1/2">
-        <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-titleFont font-bold mb-3 text-textLight mt-5 md:pt-0">
+        <div className="flex items-center justify-center md:justify-between">
+          <h2 className="md:text-2xl text-xl font-titleFont font-bold mb-3 text-textLight mt-5 md:pt-0">
             {project.title}
           </h2>
-          <span className="flex gap-x-3">
+          <span className="md:flex gap-x-3 hidden">
             <a href={project.github} target="_blank">
               <FiGithub className="hover:-translate-y-1 w-6 h-6  hover:text-textGreen transition-transform cursor-pointer" />
             </a>
@@ -64,9 +67,17 @@ const FeaturedCard = ({ project, showReversed }: Props) => {
             )}
           </span>
         </div>
-        <p className="text-md leading-7 mb-2 text-textDark font-bodyFont">
+        <p className="text-md leading-7 mb-2 text-textDark font-bodyFont hidden md:block">
           {project.description}
         </p>
+      </div>
+      <div className="flex justify-center my-1 md:hidden">
+        <button
+          className="featured-card-button"
+          onClick={() => onOpen(project)}
+        >
+          Learn more
+        </button>
       </div>
     </motion.div>
   );

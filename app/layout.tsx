@@ -1,8 +1,8 @@
+import LeftSide from "@/components/left-side";
+import Navbar from "@/components/navbar";
+import RightSide from "@/components/right-side";
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/navbar";
-import LeftSide from "@/components/left-side";
-import RightSide from "@/components/right-side";
 
 export const metadata: Metadata = {
   title: "Yusha's Portfolio",
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="w-full min-h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden overflow-y-auto">
         <Navbar />
         <LeftSide />
