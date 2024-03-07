@@ -23,7 +23,7 @@ html {
 }
 
 .nav-link {
-  @apply flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 outline-none;
+  @apply flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 outline-none mx-auto;
 }
 
 .featured-card-button {
@@ -75,4 +75,8 @@ html {
 
 .featured-card-button:hover:before {
   transform: translateX(15em);
+}
+
+.drawer-span {
+  @apply text-textGreen block text-center mb-1;
 }

@@ -1,21 +1,14 @@
 "use client";
 
 import useModalStore from "@/hooks/use-modal-store";
-import { useEffect, useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
+import { Fragment } from "react";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { MdOutlineClose } from "react-icons/md";
 
 const ProjectModal = () => {
   const { isOpen, onClose, data } = useModalStore();
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) return null;
 
   return (
     <Transition appear show={isOpen} as={Fragment}>

@@ -42,7 +42,7 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
                 leaveTo="translate-x-full"
               >
                 <Dialog.Panel className="pointer-events-auto w-[75vw]">
-                  <div className="flex h-full flex-col overflow-y-auto bg-bodyColor py-6">
+                  <div className="flex h-full flex-col overflow-y-auto bg-secondaryColor py-6">
                     <div className="px-4 sm:px-6">
                       <div className="flex items-start justify-end">
                         <div className="ml-3 flex h-7 items-center">
@@ -69,8 +69,7 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
                               ease: "easeIn",
                             }}
                           >
-                            <span className="text-textGreen">01. </span>
-                            About
+                            <span className="drawer-span">01. </span> About
                           </motion.li>
                         </Link>
                         <Link
@@ -87,7 +86,7 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
                               ease: "easeIn",
                             }}
                           >
-                            <span className="text-textGreen">02. </span>
+                            <span className="drawer-span">02.</span>
                             Projects
                           </motion.li>
                         </Link>
@@ -105,7 +104,7 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
                               ease: "easeIn",
                             }}
                           >
-                            <span className="text-textGreen">03. </span>
+                            <span className="drawer-span">03.</span>
                             Contact
                           </motion.li>
                         </Link>
