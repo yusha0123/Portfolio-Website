@@ -55,6 +55,7 @@ const ProjectModal = () => {
                     alt="project-image"
                     width={400}
                     height={400}
+                    loading="lazy"
                     className="object-cover rounded-md"
                   />
                 </div>
