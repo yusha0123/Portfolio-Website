@@ -28,7 +28,6 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
         >
           <div className="fixed inset-0 backdrop-blur-sm" />
         </Transition.Child>
-
         <div className="fixed inset-0 overflow-hidden">
           <div className="absolute inset-0 overflow-hidden">
             <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
@@ -42,13 +41,13 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
                 leaveTo="translate-x-full"
               >
                 <Dialog.Panel className="pointer-events-auto w-[75vw]">
-                  <div className="flex h-full flex-col overflow-y-auto bg-secondaryColor py-6">
+                  <div className="flex h-full flex-col overflow-y-auto bg-secondaryColor py-6 rounded-xl">
                     <div className="px-4 sm:px-6">
                       <div className="flex items-start justify-end">
                         <div className="ml-3 flex h-7 items-center">
                           <MdOutlineClose
                             onClick={onClose}
-                            className="text-3xl text-textGreen cursor-pointer hover:text-red-500 absolute top-4 right-4"
+                            className="text-3xl text-textGreen cursor-pointer transition duration-300 hover:text-red-500 absolute top-4 right-4"
                           />
                         </div>
                       </div>

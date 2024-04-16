@@ -46,7 +46,7 @@ const FeaturedCard = ({ project, showReversed }: Props) => {
             height={1000}
             className="rounded-xl"
           />
-          <div className="absolute top-0 left-0 bg-yellow-500 text-white font-bold px-3 py-1 rounded-tl-md rounded-br-md">
+          <div className="absolute top-0 left-0 bg-yellow-500 text-white font-semibold px-2 text-sm py-1 rounded-tl-md rounded-br-md">
             Featured
           </div>
         </Link>

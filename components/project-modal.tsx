@@ -24,7 +24,6 @@ const ProjectModal = () => {
         >
           <div className="fixed inset-0 backdrop-blur-sm" />
         </Transition.Child>
-
         <div className="fixed inset-0 overflow-y-auto">
           <div className="flex min-h-full items-center justify-center p-4 text-center">
             <Transition.Child
@@ -55,7 +54,7 @@ const ProjectModal = () => {
                     alt="project-image"
                     width={400}
                     height={400}
-                    loading="lazy"
+                    priority
                     className="object-cover rounded-md"
                   />
                 </div>
