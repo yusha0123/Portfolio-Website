@@ -40,6 +40,14 @@ const featuredProjects: FeaturedProjects = [
     github: "https://github.com/yusha0123/Discord-Clone",
   },
   {
+    title: "Yoom",
+    description:
+      "Built with the latest Next.js and TypeScript, this project replicates Zoom, a widely used video conferencing tool. It enables users to securely log in, create meetings and access various meeting functionalities such as recording, screen sharing, and managing participants.",
+    image: "/yoom.webp",
+    github: "https://github.com/yusha0123/Yoom",
+    live: "https://yoom-yusha.vercel.app/",
+  },
+  {
     title: "Notion Clone",
     description:
       "Notion Clone is a comprehensive project developed on the Next.js 14 framework, emulating the functionality of Notion. Clerk Authentication ensures secure user access. Tailwind CSS and Shadcn/UI contribute to a responsive and visually appealing UI. Real-time updates are facilitated through Convex Real-time Database, ensuring dynamic content changes.",
