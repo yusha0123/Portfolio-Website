@@ -1,5 +1,6 @@
 import { ArchiveProjects, FeaturedProjects } from "@/lib/types";
-import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const recentTechnologies: string[] = [
   "JavaScript (ES6+)",
@@ -22,8 +23,8 @@ const socialLinks = [
     icon: <FaLinkedin />,
   },
   {
-    href: "https://www.instagram.com/yushatahlil",
-    icon: <FaInstagram />,
+    href: "mailto:ymmttmy5@gmail.com",
+    icon: <MdEmail />,
   },
   {
     href: "https://api.whatsapp.com/send/?phone=919330264849",
@@ -171,4 +172,5 @@ const archievedProjects: ArchiveProjects = [
   },
 ];
 
-export { featuredProjects, recentTechnologies, socialLinks, archievedProjects };
+export { archievedProjects, featuredProjects, recentTechnologies, socialLinks };
+

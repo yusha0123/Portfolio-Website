@@ -134,15 +134,6 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
                           </motion.a>
                         ))}
                       </div>
-                      <motion.a
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 1.2, ease: "easeIn" }}
-                        className="text-sm w-full tracking-widest text-textGreen text-center"
-                        href="mailto:ymmttmy5@gmail.com"
-                      >
-                        <p>ymmttmy5@gmail.com</p>
-                      </motion.a>
                     </div>
                   </div>
                 </Dialog.Panel>
