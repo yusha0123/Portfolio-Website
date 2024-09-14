@@ -4,10 +4,14 @@ import React, { ReactElement } from "react";
 
 interface AnimatedElementProps {
   elementType: string;
-  animationProps: AnimationProps;
+  animationProps?: AnimationProps;
   motionProps?: MotionProps;
   className?: string;
   children: React.ReactNode;
+  initial?: string;
+  whileInView?: string;
+  viewport?: { once?: boolean; amount?: number };
+  variants?: MotionProps["variants"];
 }
 
 const AnimatedElement = ({
@@ -16,12 +20,24 @@ const AnimatedElement = ({
   motionProps,
   className,
   children,
+  initial = "hidden",
+  whileInView = "visible",
+  viewport = { once: true },
+  variants,
 }: AnimatedElementProps): ReactElement => {
   // @ts-ignore
   const MotionComponent = motion[elementType];
 
   return (
-    <MotionComponent {...animationProps} {...motionProps} className={className}>
+    <MotionComponent
+      initial={initial}
+      whileInView={whileInView}
+      viewport={viewport}
+      variants={variants}
+      {...animationProps}
+      {...motionProps}
+      className={className}
+    >
       {children}
     </MotionComponent>
   );

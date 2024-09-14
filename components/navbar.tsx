@@ -38,7 +38,7 @@ const Navbar = () => {
         scrolled && "shadow-navbarBoxShadow"
       )}
     >
-      <div className="max-w-container h-full mx-auto py-5 font-titleFont flex items-center justify-between">
+      <div className="max-w-container h-full mx-auto py-4 font-titleFont flex items-center justify-between">
         <motion.div
           initial={{
             opacity: 0,

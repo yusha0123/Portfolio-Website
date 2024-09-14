@@ -11,6 +11,8 @@ const recentTechnologies: string[] = [
   "MongoDB",
   "Tailwindcss",
   "Express JS",
+  "Angular",
+  "Docker",
 ];
 
 const socialLinks = [
@@ -173,4 +175,3 @@ const archievedProjects: ArchiveProjects = [
 ];
 
 export { archievedProjects, featuredProjects, recentTechnologies, socialLinks };
-
