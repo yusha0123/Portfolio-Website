@@ -1,11 +1,16 @@
 "use client";
 
-import { Dialog, Transition } from "@headlessui/react";
+import {
+  Dialog,
+  DialogPanel,
+  Transition,
+  TransitionChild,
+} from "@headlessui/react";
 import Link from "next/link";
 import { Fragment } from "react";
 import { MdOutlineClose } from "react-icons/md";
 import { motion } from "framer-motion";
-import { socialLinks } from "@/constants";
+import { resumeLink, socialLinks } from "@/constants";
 
 type Props = {
   isOpen: boolean;
@@ -15,9 +20,9 @@ type Props = {
 
 const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
   return (
-    <Transition.Root show={isOpen} as={Fragment}>
+    <Transition show={isOpen} as={Fragment}>
       <Dialog as="div" className="relative z-50" onClose={onClose}>
-        <Transition.Child
+        <TransitionChild
           as={Fragment}
           enter="ease-out duration-500"
           enterFrom="opacity-0"
@@ -27,11 +32,11 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
           leaveTo="opacity-0"
         >
           <div className="fixed inset-0 backdrop-blur-sm" />
-        </Transition.Child>
+        </TransitionChild>
         <div className="fixed inset-0 overflow-hidden">
           <div className="absolute inset-0 overflow-hidden">
             <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
-              <Transition.Child
+              <TransitionChild
                 as={Fragment}
                 enter="transform transition ease-in-out duration-500"
                 enterFrom="translate-x-full"
@@ -40,7 +45,7 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
                 leaveFrom="translate-x-0"
                 leaveTo="translate-x-full"
               >
-                <Dialog.Panel className="pointer-events-auto w-[75vw]">
+                <DialogPanel className="pointer-events-auto w-[75vw]">
                   <div className="flex h-full flex-col overflow-y-auto bg-secondaryColor py-6 rounded-xl">
                     <div className="px-4 sm:px-6">
                       <div className="flex items-start justify-end">
@@ -108,7 +113,7 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
                           </motion.li>
                         </Link>
                       </ul>
-                      <Link href="/resume.pdf" target="_blank">
+                      <Link href={resumeLink} target="_blank">
                         <motion.button
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
@@ -136,13 +141,13 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
                       </div>
                     </div>
                   </div>
-                </Dialog.Panel>
-              </Transition.Child>
+                </DialogPanel>
+              </TransitionChild>
             </div>
           </div>
         </div>
       </Dialog>
-    </Transition.Root>
+    </Transition>
   );
 };
 

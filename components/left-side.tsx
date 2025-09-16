@@ -4,7 +4,7 @@ import AnimatedElement from "./animated-element";
 const LeftSide = () => {
   return (
     <AnimatedElement
-      animationProps={{
+      motionProps={{
         initial: { opacity: 0 },
         animate: { opacity: 1 },
         transition: { delay: 1.5 },

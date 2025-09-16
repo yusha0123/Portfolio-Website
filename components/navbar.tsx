@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useCallback, useState } from "react";
 import Drawer from "./drawer";
+import { resumeLink } from "@/constants";
 
 const Navbar = () => {
   const scrolled = useIsScrolled();
@@ -122,7 +123,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
           </ul>
-          <a href="/resume.pdf" download>
+          <a href={resumeLink} target="_blank">
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

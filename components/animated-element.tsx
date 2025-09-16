@@ -1,10 +1,9 @@
 "use client";
-import { motion, AnimationProps, MotionProps } from "framer-motion";
+import { motion, MotionProps } from "framer-motion";
 import React, { ReactElement } from "react";
 
 interface AnimatedElementProps {
-  elementType: string;
-  animationProps?: AnimationProps;
+  elementType: keyof React.JSX.IntrinsicElements;
   motionProps?: MotionProps;
   className?: string;
   children: React.ReactNode;
@@ -16,7 +15,6 @@ interface AnimatedElementProps {
 
 const AnimatedElement = ({
   elementType,
-  animationProps,
   motionProps,
   className,
   children,
@@ -24,7 +22,7 @@ const AnimatedElement = ({
   whileInView = "visible",
   viewport = { once: true },
   variants,
-}: AnimatedElementProps): ReactElement => {
+}: AnimatedElementProps): ReactElement<any> => {
   // @ts-ignore
   const MotionComponent = motion[elementType];
 
@@ -34,7 +32,6 @@ const AnimatedElement = ({
       whileInView={whileInView}
       viewport={viewport}
       variants={variants}
-      {...animationProps}
       {...motionProps}
       className={className}
     >

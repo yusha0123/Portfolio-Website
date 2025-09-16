@@ -3,16 +3,16 @@ import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const recentTechnologies: string[] = [
-  "JavaScript (ES6+)",
+  "Angular",
   "Next.js",
   "React",
+  "Redux Toolkit",
+  "JavaScript (ES6+)",
   "Typescript",
   "MySQL",
   "MongoDB",
   "Tailwindcss",
   "Express JS",
-  "Angular",
-  "Docker",
 ];
 
 const socialLinks = [
@@ -25,7 +25,7 @@ const socialLinks = [
     icon: <FaLinkedin />,
   },
   {
-    href: "mailto:ymmttmy5@gmail.com",
+    href: "mailto:yushatahlil.tech@gmail.com",
     icon: <MdEmail />,
   },
   {
@@ -174,4 +174,13 @@ const archievedProjects: ArchiveProjects = [
   },
 ];
 
-export { archievedProjects, featuredProjects, recentTechnologies, socialLinks };
+const resumeLink =
+  "https://drive.google.com/file/d/16NTuW1iNTbAU7i6yHs9M2KBGevyGGI-O/view?usp=sharing";
+
+export {
+  archievedProjects,
+  featuredProjects,
+  recentTechnologies,
+  socialLinks,
+  resumeLink,
+};
