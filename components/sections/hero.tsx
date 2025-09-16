@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="flex flex-col gap-4 lgl:gap-8 mx-auto w-full mdl:py-16 h-[calc(100dvh-70px)] justify-center">
       <AnimatedElement
         elementType="h3"
-        animationProps={{
+        motionProps={{
           initial: {
             y: 10,
             opacity: 0,
@@ -22,7 +22,7 @@ const Hero = () => {
       </AnimatedElement>
       <AnimatedElement
         elementType="h1"
-        animationProps={{
+        motionProps={{
           initial: {
             y: 10,
             opacity: 0,
@@ -42,7 +42,7 @@ const Hero = () => {
       </AnimatedElement>
       <AnimatedElement
         elementType="p"
-        animationProps={{
+        motionProps={{
           initial: {
             y: 10,
             opacity: 0,
@@ -63,7 +63,7 @@ const Hero = () => {
       <a href="https://github.com/yusha0123" target="_blank">
         <AnimatedElement
           elementType="button"
-          animationProps={{
+          motionProps={{
             initial: {
               y: 10,
               opacity: 0,

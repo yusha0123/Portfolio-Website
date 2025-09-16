@@ -23,13 +23,11 @@ const ArchiveCard = ({
   return (
     <AnimatedElement
       elementType="div"
-      animationProps={{
-        initial: { opacity: 0 },
-        transition: { delay: 0.1 * index },
-      }}
       motionProps={{
         whileInView: { opacity: 1 },
         viewport: { once: true },
+        initial: { opacity: 0 },
+        transition: { delay: 0.1 * index },
       }}
       className="w-full rounded-lg bg-[#112240] p-7 flex flex-col justify-between gap-6 hover:-translate-y-2 transition-transform duration-300 group"
     >
