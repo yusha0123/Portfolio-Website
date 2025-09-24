@@ -177,10 +177,55 @@ const archievedProjects: ArchiveProjects = [
 const resumeLink =
   "https://drive.google.com/file/d/16NTuW1iNTbAU7i6yHs9M2KBGevyGGI-O/view?usp=sharing";
 
+const experiences = [
+  {
+    title: "Software Engineer",
+    company: "Dhira Software Labs",
+    duration: "August 2024 - Present",
+    description: [
+      "Enhanced API Security & Performance: Fortified REST APIs against SQL injection and malicious attacks by implementing comprehensive input validation, parameterized queries, and database transaction management, reducing security vulnerabilities by 95%",
+      "Architected Authentication System: Built a custom two-factor authentication (2FA) solution from scratch integrating with Keycloak, enhancing user security for enterprise clients despite platform limitations",
+      "Implemented Role-Based Access Control (RBAC): Designed and developed a granular permission system with role-based authorization, ensuring users access only authorized resources and reducing unauthorized access incidents",
+      "Designed Master Data Management System: Created a comprehensive data governance solution allowing efficient management of critical business data with real-time synchronization and audit trails",
+      "Revolutionized ETL User Experience: Transformed the legacy ETL system into a modern, intuitive drag-and-drop interface using React Flow, improving user productivity by 60% and reducing pipeline creation time drastically",
+    ],
+    technologies: [
+      "React.js",
+      "Redux Toolkit",
+      "Angular",
+      "TypeScript",
+      "PostgreSQL",
+      "Node.js",
+      "Next.js",
+      "Keycloak",
+      "Apache Airflow",
+    ],
+  },
+  {
+    title: "Full Stack Intern",
+    company: "Dhira Software Labs",
+    duration: "May 2024 - August 2024",
+    description: [
+      "Contributed to core product development and gained hands-on experience with enterprise-level applications",
+      "Collaborated with senior developers on API development and frontend optimization",
+    ],
+    technologies: [
+      "KeyCloak",
+      "Angular",
+      "Docker",
+      "Apache Airflow",
+      "PostgreSQL",
+      "Node.js",
+      "Typescript",
+    ],
+  },
+];
+
 export {
   archievedProjects,
   featuredProjects,
   recentTechnologies,
   socialLinks,
   resumeLink,
+  experiences,
 };

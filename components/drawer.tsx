@@ -15,7 +15,10 @@ import { resumeLink, socialLinks } from "@/constants";
 type Props = {
   isOpen: boolean;
   onClose: () => void;
-  handleScroll: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
+  handleScroll: (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    id: string
+  ) => void;
 };
 
 const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
@@ -59,10 +62,11 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
                     </div>
                     <div className="flex flex-col items-center gap-7 mt-6 ">
                       <ul className="flex flex-col text-base gap-7">
+                        {/* 01. About */}
                         <Link
                           className="nav-link"
                           href="#about"
-                          onClick={handleScroll}
+                          onClick={(e) => handleScroll(e, "about")}
                         >
                           <motion.li
                             initial={{ x: 20, opacity: 0 }}
@@ -73,13 +77,34 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
                               ease: "easeIn",
                             }}
                           >
-                            <span className="drawer-span">01. </span> About
+                            <span className="drawer-span">01.</span> About
                           </motion.li>
                         </Link>
+
+                        {/* 02. Experience */}
+                        <Link
+                          className="nav-link"
+                          href="#experience"
+                          onClick={(e) => handleScroll(e, "experience")}
+                        >
+                          <motion.li
+                            initial={{ x: 20, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{
+                              duration: 0.2,
+                              delay: 0.3,
+                              ease: "easeIn",
+                            }}
+                          >
+                            <span className="drawer-span">02.</span> Experience
+                          </motion.li>
+                        </Link>
+
+                        {/* 03. Projects */}
                         <Link
                           className="nav-link"
                           href="#projects"
-                          onClick={handleScroll}
+                          onClick={(e) => handleScroll(e, "projects")}
                         >
                           <motion.li
                             initial={{ x: 20, opacity: 0 }}
@@ -90,14 +115,15 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
                               ease: "easeIn",
                             }}
                           >
-                            <span className="drawer-span">02.</span>
-                            Projects
+                            <span className="drawer-span">03.</span> Projects
                           </motion.li>
                         </Link>
+
+                        {/* 04. Contact */}
                         <Link
                           className="nav-link"
                           href="#contact"
-                          onClick={handleScroll}
+                          onClick={(e) => handleScroll(e, "contact")}
                         >
                           <motion.li
                             initial={{ x: 20, opacity: 0 }}
@@ -108,11 +134,12 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
                               ease: "easeIn",
                             }}
                           >
-                            <span className="drawer-span">03.</span>
-                            Contact
+                            <span className="drawer-span">04.</span> Contact
                           </motion.li>
                         </Link>
                       </ul>
+
+                      {/* Resume Button */}
                       <Link href={resumeLink} target="_blank">
                         <motion.button
                           initial={{ opacity: 0 }}
@@ -123,6 +150,8 @@ const Drawer = ({ isOpen, onClose, handleScroll }: Props) => {
                           Resume
                         </motion.button>
                       </Link>
+
+                      {/* Social Links */}
                       <div className="flex gap-4">
                         {socialLinks.map((item) => (
                           <motion.a

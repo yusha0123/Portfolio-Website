@@ -9,7 +9,7 @@ interface AnimatedElementProps {
   children: React.ReactNode;
   initial?: string;
   whileInView?: string;
-  viewport?: { once?: boolean; amount?: number };
+  viewport?: { once?: boolean; amount?: number; margin?: string };
   variants?: MotionProps["variants"];
 }
 
